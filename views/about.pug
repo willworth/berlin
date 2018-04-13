@@ -2,27 +2,35 @@ extends layout
 block content
     div.container
 
-        h1 About
+      h1 About
 
-        p The plan here is to create a simple boilerplate crude app.
-        p pug is indentation based and you can span#idname as well as item.class.class2 etc
-        p div is assumed, so you can just put .wrapper
-        p I will require
+      p The plan here is to create a simple boilerplate crude app.
+      p pug is indentation based and you can span#idname as well as item.class.class2 etc
+      p div is assumed, so you can just put .wrapper
+      h3(id='person')= examplePerson  
+          p (this is my example of passing a string in a pugfile)
+      p I will require
 
-            p create
+          p create
 
-            p read
+          p read
 
-            p update
+          p update
 
-            p delete
+          p delete
 
-        h2 To do:
-        ul 
-            li basic css
-            li error handling
-            li authentication
-            li testing
+      h2 To do:
+      ul 
+        li basic css
+        li error handling
+        li authentication
+          li testing
+
+
+        ul
+        p example of passing and looping over an array
+      each val in list
+        li=val
 
         //- img(src="C:\dev\berlin\views\ilf.jpg" alt ="Hometown")
         //- img(src="ilf.jpg" alt ="Hometown")
