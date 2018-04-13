@@ -1,0 +1,41 @@
+{
+  "name": "berlin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./start.js --ignore public/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chalk": "^2.3.2",
+    "cookie-parser": "^1.4.3",
+    "eslint": "^4.19.1",
+    "express": "^4.16.3",
+    "moment": "^2.22.0",
+    "mongoose": "^5.0.13",
+    "nodemon": "^1.17.3",
+    "passport": "^0.4.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 3088
+    }
+  }
+}

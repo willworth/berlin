@@ -1,0 +1,19 @@
+extends layout
+block content
+    div.container
+
+
+        h1 Welcome to the Berlin crud app 
+
+            p.hello Hello
+            span#test test
+
+            h2 today ends #{h.moment().endOf('day').fromNow()}
+
+
+            p Assuming a life expectancy of 78 years, and having been born in 1981, that would suggest a death in 2059.
+            p  That's #{h.moment('June 12th, 2059','MMM DD YYYY').fromNow()}... best make them count!
+
+
+
+    

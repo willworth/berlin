@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= `${title} | ${h.siteName}`
+    
+    style
+      include ../static/sv.css
+    //- link(rel="shortcut icon" type="image/png" href="/images/icons/doughnut.png")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    block header
+      header.top
+        nav.nav
+            p This is the header from layout pug file
+          
+
+    
+    .content
+      block content
+
+    block scripts
+      script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`)
+      script(src="/dist/App.bundle.js")
