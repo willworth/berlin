@@ -6,4 +6,9 @@
 exports.moment = require('moment');
 
 // Some details about the site
-exports.siteName = `Berlin CRUD`;
+exports.siteName = 'Berlin CRUD';
+
+exports.menu = [
+  { link: '/songs', title: 'Songs' },
+  { link: '/artists', title: 'Artists' },
+];

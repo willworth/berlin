@@ -1,4 +1,5 @@
 doctype html
+//- will not output within markup
 html
   head
     title= `${title} | ${h.siteName}`
@@ -12,6 +13,12 @@ html
       header.top
         nav.nav
             p This is the header from layout pug file
+            ul
+              each item in h.menu
+                li.nav.link
+                  a(href="http://")
+                   span #{item.title}
+                 
           
 
     
