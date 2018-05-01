@@ -19,9 +19,10 @@ and the terminal should display that the server is running on a port you can def
 
 
 
-This has nothing to do with Berlin.
-
 It's just a boilerplate crud app using
 *mongo  (database)
 *pug (html template rendering)
 
+
+dotenv for loading env variables!
+https://www.npmjs.com/package/dotenv

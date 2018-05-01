@@ -10,13 +10,13 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
     block header
-      header.top
+      header.top.container.header
         nav.nav
             p This is the header from layout pug file
             ul
               each item in h.menu
                 li.nav.link
-                  a(href="http://")
+                  a(href=item.link)
                    span #{item.title}
                  
           
@@ -24,6 +24,11 @@ html
     
     .content
       block content
+
+
+  block footer
+    footer.footer
+      p this is the footer from layout.pug
 
     block scripts
       script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`)

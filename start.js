@@ -1,5 +1,10 @@
 const mongoose = require('mongoose');
 // const port = 3088;
+
+// import environmental variables from our variables.env file
+require('dotenv').config({ path: 'variables.env' });
+
+
 const port = process.env.PORT || 3088;
 const app = require('./app');
 const chalk = require('chalk'); // why does this not get pulled in by app?
